@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            
+            background-color: rgb(2, 2, 37);
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-top: 0px;
+        }
+        .cabecalho{
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            border: 1px solid none;
+            width: 100%;
+            margin-left: 5px;
+            height: 105px;
+            margin-top: 0px;
+        }
+        .logo{
+            position: relative;
+            box-sizing: border-box; 
+            border: 1px none;   
+            height: 100%;
+            width: 12%; 
+        }
+        #imagem-logo{
+            position: absolute;
+            width: 100%;        
+            height: 100%;   
+        }
+        .navbar{
+            box-sizing: border-box;
+            border: 1px none;
+            width: 90%;
+            height: 100%;
+          
+        }
+        nav ul{
+            display: flex;
+            margin-top: 75px;
+            gap: 20px;
+            font-size: 20px;
+        }
+        nav li{
+            display: inline-block;
+            
+        }
+        .login{
+           margin-left: auto;
+           margin-right: 20px;
+            
+        }
+        body h1{
+            text-align: center;
+        }
+        #artista-pesquisa{
+            gap: 86px;
+            font-size: 22px;
+        }
+        .main-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            box-sizing: border-box;
+            border: 1px none;
+            width: 90%;
+            height:auto;
+            margin: 0px;
+            padding: 0px;
+            gap: 20px;
+            margin-left: 5%;
+        }
+        main article{
+            position: relative;
+            box-sizing: border-box;
+            border: 1px solid black;
+            width: 19%;  
+            height: 280px;
+            text-align: center;
+            margin: 0px;
+        }
+        #imagem-munch{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-frida{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-monalisa{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-caravaggio{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-gogh{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-banksy{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-warhol{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-hopper{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-courbet{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-waterhouse{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-monet{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-michelangelo{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-yayoi{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-muniz{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-pollock{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-picasso{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-goeldi{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-anita{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-portinari{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-marina{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-magritte{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-kandinsky{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-rembrandt{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-oiticica{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #imagem-riley{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        article h4{
+            position: absolute;
+            color: whitesmoke;
+            z-index: 2;
+            left: 2%;
+            top: 200px;
+            
+            font-size: 23px;
+            text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+
+        }
+        .rodape{        
+            display: flex;  
+            box-sizing: border-box;
+            border: 1px none;   
+            width: 100%;
+            height: 450px;  
+            color: whitesmoke;      
+        }
+        address{ 
+            text-align: justify;
+        }
+        footer ul{
+            list-style-type: none;
+            margin-top: 70px;
+        }
+        footer div{
+            box-sizing: border-box;
+            border: 1px none;
+            width: 100%;
+            text-align: center;    
+        }
+        
+    </style>
+    <script>
+        window.onload = function() {
+            const elem = document.getElementById("artista-pesquisa");
+            elem.style.display = "flex";
+            elem.style.justifyContent = "center";
+            elem.style.alignItems = "center";
+        }
+    </script>
+    <body>
+    
+        <header class="cabecalho">
+        <div class="logo">          
+            <img id="imagem-logo" src="/imagens/logo.png" alt="">
+        </div>      
+        <nav class="navbar">
+            <ul>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/index.html">Pagina Inicial</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/index.html">Explorar</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/principais/aulas.html">Aulas</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="">Jogos</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="">Suporte</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/principais/sobre.html">Sobre Nós</a></li>
+                <li class="login"><a style="color: whitesmoke; text-decoration: none;" href="/principais/login.html">Login/Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <br><br><br>
+    <h1 style="color: whitesmoke; font-size: 40px;">Artistas</h1>
+    <br>
+    <div id="artista-pesquisa">
+        <h2 style="color: whitesmoke;">Todos</h2>
+        <h2 style="color: whitesmoke;">A-Z</h2>
+        <h2 style="color: whitesmoke;">Período</h2>
+    </div>
+    <br><br>
+    <main class="main-container">
+       <article class="munch">
+            <img id="imagem-munch" src="/imagens/edvard.jpg" alt="">
+            <h4>Edvard Munch</h4>
+       </article>           
+       <article class="frida">
+            <img id="imagem-frida" src="/imagens/frida.jpg" alt="">
+            <h4>Frida Kahlo</h4>
+       </article>
+       <article class="monalisa">
+            <img id="imagem-monalisa" src="/imagens/Monalisa.jpg" alt="">
+            <h4>Leonardo Da Vinci</h4>
+       </article>
+       <article class="caravaggio"> 
+            <img id="imagem-caravaggio" src="/imagens/tome.jpg" alt="">
+            <h4>Caravaggio</h4>
+       </article>
+       <article class="gogh">
+            <img id="imagem-gogh" src="/imagens/Gogh.jpg" alt="">
+            <h4>Vincent Van Gogh</h4>
+       </article>
+       <article class="banksy">
+            <img id="imagem-banksy" src="/imagens/banksy.jpg" alt="">
+            <h4>Banksy</h4>
+       </article>
+       <article class="warhol">
+            <img id="imagem-warhol" src="/imagens/warhol.jpg" alt="">
+            <h4>Andy Warhol</h4>
+       </article>
+       <article>
+            <img id="imagem-hopper" src="/imagens/hopper.jpeg" alt="">
+            <h4>Edward Hopper</h4>
+       </article>
+       <article class="courbet">
+            <img id="imagem-courbet" src="/imagens/courbet.jpg" alt="">
+            <h4>Gustave Courbet</h4>
+       </article>
+       <article class="waterhouse">
+            <img id="imagem-waterhouse" src="/imagens/waterhouse.jpg" alt="">
+            <h4>John William Waterhouse</h4>
+       </article>
+       <article class="monet">
+            <img id="imagem-monet" src="/imagens/monet.jpg" alt="">
+            <h4>Monet</h4>
+       </article>
+       <article class="michelangelo">
+            <img id="imagem-michelangelo" src="/imagens/michelangelo.jpg" alt="">
+            <h4>Michelangelo</h4>
+       </article>
+       <article class="yayoi">
+            <img id="imagem-yayoi" src="/imagens/yayoi.jpg" alt="">
+            <h4>Yayoi Kusama</h4>
+       </article>
+       <article class="muniz">
+            <img id="imagem-muniz" src="/imagens/muniz.jpg" alt="">
+            <h4>Vik Muniz</h4>
+       </article>
+       <article class="pollock">
+            <img id="imagem-pollock" src="/imagens/pollock.jpg" alt="">
+            <h4>Jackson Pollock</h4>
+       </article>
+       <article class="pablo">
+            <img id="imagem-picasso" src="/imagens/picasso.jpg" alt="">
+            <h4>Pablo Picasso</h4>
+       </article>
+       <article class="goeldi">
+            <img id="imagem-goeldi" src="/imagens/goeldi.jpg" alt="">
+            <h4>Oswaldo Goeldi</h4>
+       </article>
+       <article class="anita">
+            <img id="imagem-anita" src="/imagens/anita.jpg" alt="">
+            <h4>Anita Malfatti</h4>
+       </article>
+       <article class="portinari">
+            <img id="imagem-portinari" src="/imagens/portinari.jpg" alt="">
+            <h4>Portinari</h4>
+       </article>
+       <article class="marina">
+            <img id="imagem-marina" src="/imagens/marina.jpg" alt="">
+            <h4>Marina Abramovic</h4>
+       </article>
+       <article class="magritte">
+            <img id="imagem-magritte" src="/imagens/magritte.jfif" alt="">
+            <h4>René Magritte</h4>
+       </article>
+       <article class="kandinsky">
+            <img id="imagem-kandinsky" src="/imagens/kandinsky.jfif" alt="">
+            <h4>Wassily Kandinsky</h4>
+       </article>
+       <article class="rembrandt">
+            <img id="imagem-rembrandt" src="/imagens/rembrandt.jpg" alt="">
+            <h4>Rembrandt</h4>
+       </article>
+       <article class="oiticica">
+            <img id="imagem-oiticica" src="/imagens/oiticica.jpg" alt="">
+            <h4>Hélio Oiticica</h4>
+       </article>
+       <article class="riley">
+            <img id="imagem-riley" src="/imagens/riley.jpg" alt="">
+            <h4>Bridget Riley</h4>
+       </article>
+       
+    </main>
+    <br>
+    <hr>
+    <footer class="rodape">
+        <div id="adress"> 
+            <ul>
+                <li><h3>Contato:</h3></li>
+                <br>
+                <li>(42) 99810-2741</li>
+                <br>
+                <li>coelho.raphaelhenrique@gmail.com</li>
+            </ul>
+            <ul>
+                <li><h3>Endereço:</h3></li>
+                <br>
+                <li>Faculdade de Tecnologia SENAC Ponta Grossa</li>
+                <br>
+                <li>Av. João Manoel dos Santos Ribas, 313 - Nova Rússia, Ponta Grossa - PR</li>
+                84051-410
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><h3>Quem Somos</h3></li>
+                <br>
+                <li>Sobre Nós</li>
+                <br>
+                <li>Nossos Planos</li>
+                <br>
+                <li>Trabalhe conosco</li>
+                <br>
+                <li>Investidores</li>
+                <br>
+                <li>Missão, Visão e Valores</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><h3>Termos de Uso</h3></li>
+                <br>
+                <li>Termos e Condições</li>
+                <br>
+                <li>Contrato de Licença</li>    
+                <br>
+                <li>Política de Segurança</li>
+                <br>
+                <li>Política de Privacidade</li>
+                <br>
+                <li>Proteção de Dados</li>
+            </ul>
+        </div>
+        <div> 
+            <ul>
+                <li><h3>Baixe Nosso App</h3></li>
+                <li><img style="width: 400px; height: 200px;" src="/imagens/Google.png" alt=""></li>
+                <li></li>
+            </ul>
+        </div>  
+    </footer>  
+</body>
+</html>

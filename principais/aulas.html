@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            
+            background-color: rgb(2, 2, 37);
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-top: 0px;
+        }
+        .cabecalho{
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            border: 1px solid none;
+            width: 100%;
+            margin-left: 5px;
+            height: 105px;
+            margin-top: 0px;
+        }
+        .logo{
+            position: relative;
+            box-sizing: border-box; 
+            border: 1px none;   
+            height: 100%;
+            width: 12%; 
+        }
+        #imagem-logo{
+            position: absolute;
+            width: 100%;        
+            height: 100%;   
+        }
+        .navbar{
+            box-sizing: border-box;
+            border: 1px none;
+            width: 90%;
+            height: 100%;
+          
+        }
+        nav ul{
+            display: flex;
+            margin-top: 75px;
+            gap: 20px;
+            font-size: 20px;
+        }
+        nav li{
+            display: inline-block;
+            
+        }
+        .login{
+           margin-left: auto;
+           margin-right: 20px;
+            
+        }
+        body h1{
+            text-align: center;
+        }
+        
+        .main-container{
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            border: 1px none;
+            width: 90%;
+            height:auto;
+            margin: 0px;
+            padding: 0px;
+            gap: 20px;
+            margin-left: 4%;
+        }
+
+        .navegar{
+            border: 1px none;
+            box-sizing: border-box;
+            width: 20%;
+            height: auto;
+        }
+        .navlista{
+            color: whitesmoke;
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 20px;
+        }
+        .aula-simbolismo{
+            
+            box-sizing:border-box;
+            border: 1px none;
+            width: 100%;
+            height: auto;
+            background-image: url(/imagens/asvero.jpg);
+            opacity: 0.8;
+            background-size: cover;
+            
+
+        }
+        #texto-simbolismo{
+            justify-content: center;
+            margin-top: 24%;
+            font-size: 50px;
+            color: whitesmoke;
+            text-shadow: -1px -1px 1px black, 1px -1px 1px black, -1px 1px 1px black, 1px 1px 1px black;
+        }
+        #botao-simbolismo{
+            position: absolute;
+            border: 1px solid black;
+            width: 250px;
+            height: 70px;
+            left: 50%;
+            top: 70%;
+            font-size: 40px;
+            color: whitesmoke;
+            background-color: rgb(20, 20, 20);
+            border-radius: 10px 10px 10px 10px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .rodape{        
+            display: flex;  
+            box-sizing: border-box;
+            border: 1px none;   
+            width: 100%;
+            height: 450px;  
+            color: whitesmoke;      
+        }
+        address{ 
+            text-align: justify;
+        }
+        footer ul{
+            list-style-type: none;
+            margin-top: 70px;
+        }
+        footer div{
+            box-sizing: border-box;
+            border: 1px none;
+            width: 100%;
+            text-align: center;    
+        }
+        
+    </style>
+    
+        <header class="cabecalho">
+        <div class="logo">          
+            <img id="imagem-logo" src="/imagens/logo.png" alt="">
+        </div>      
+        <nav class="navbar">
+            <ul>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/index.html">Pagina Inicial</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/index.html">Explorar</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/principais/aulas.html">Aulas</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="">Jogos</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="">Suporte</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/principais/sobre.html">Sobre Nós</a></li>
+                <li class="login"><a style="color: whitesmoke; text-decoration: none;" href="/principais/login.html">Login/Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br>
+    <body>
+        <main class="main-container">
+            <section class="navegar">
+                    <ul class="navlista">
+                        <li><h3>Categorias</h3></li>
+                        
+                        <li><h3>Elementos básicos</h3></li>
+                        <li>Artes Visuais</li>
+                        <li>Dança</li>
+                        <li>Música</li>
+                        <li>Teatro</li>
+                        <br>
+                        <li><h3>História da Arte</h3></li>
+                        <li>Períodos</li>
+                        <li>Movimentos Artísticos</li>
+                        <li>Artistas</li>
+                        <br>
+                        <li><h3>Audiovisual</h3></li>
+                        <li>Cinema</li>
+                        <li>Animação</li>
+                        <li>Videoarte</li>
+                        <br>
+                        <li><h3>Atividades</h3></li>
+                        <li>Atividades práticas</li>
+                        <li>Lições teóricas</li>
+                        <li>Jogos</li>
+                        <li>Visitas Guiadas</li>
+                    
+                </ul>
+            </section>
+            <section class="aula-simbolismo">
+                <h1 id="texto-simbolismo">Conecte-se ao universo do <br> subconsciente com o <br> Simbolismo</h1>
+                <a href="/principais/simbolismo.html"><button id="botao-simbolismo">Saiba mais</button></a>
+            </section>
+        </main>
+    
+    </body>
+    <br><br><br>
+   
+    <hr>
+    <footer class="rodape">
+        <div id="adress"> 
+            <ul>
+                <li><h3>Contato:</h3></li>
+                <br>
+                <li>(42) 99810-2741</li>
+                <br>
+                <li>coelho.raphaelhenrique@gmail.com</li>
+            </ul>
+            <ul>
+                <li><h3>Endereço:</h3></li>
+                <br>
+                <li>Faculdade de Tecnologia SENAC Ponta Grossa</li>
+                <br>
+                <li>Av. João Manoel dos Santos Ribas, 313 - Nova Rússia, Ponta Grossa - PR</li>
+                84051-410
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><h3>Quem Somos</h3></li>
+                <br>
+                <li>Sobre Nós</li>
+                <br>
+                <li>Nossos Planos</li>
+                <br>
+                <li>Trabalhe conosco</li>
+                <br>
+                <li>Investidores</li>
+                <br>
+                <li>Missão, Visão e Valores</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><h3>Termos de Uso</h3></li>
+                <br>
+                <li>Termos e Condições</li>
+                <br>
+                <li>Contrato de Licença</li>    
+                <br>
+                <li>Política de Segurança</li>
+                <br>
+                <li>Política de Privacidade</li>
+                <br>
+                <li>Proteção de Dados</li>
+            </ul>
+        </div>
+        <div> 
+            <ul>
+                <li><h3>Baixe Nosso App</h3></li>
+                <li><img style="width: 400px; height: 200px;" src="/imagens/Google.png" alt=""></li>
+                <li></li>
+            </ul>
+        </div>  
+    </footer> 
+    
+</body>
+</html>

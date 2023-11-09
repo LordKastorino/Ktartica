@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            height: 100%;
+            background-color: rgb(2, 2, 37);
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-top: 0px;
+        }
+        .cabecalho{
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            border: 1px solid none;
+            width: 100%;
+            margin-left: 5px;
+            height: 105px;
+            margin-top: 0px;
+        }
+        .logo{
+            position: relative;
+            box-sizing: border-box; 
+            border: 1px none;   
+            height: 100%;
+            width: 12%; 
+        }
+        #imagem-logo{
+            position: absolute;
+            width: 100%;        
+            height: 100%;   
+        }
+        .navbar{
+            box-sizing: border-box;
+            border: 1px none;
+            width: 90%;
+            height: 100%;
+          
+        }
+        nav ul{
+            display: flex;
+            margin-top: 75px;
+            gap: 20px;
+            font-size: 20px;
+        }
+        nav li{
+            display: inline-block;
+            
+        }
+        .login{
+           margin-left: auto;
+           margin-right: 20px;
+            
+        }
+        body h1{
+            text-align: center;
+        }
+        
+        .main-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            border: 1px black;
+            width: 100%;
+            height: 100%;
+            margin: 1px;
+            padding: 10px;
+            gap: 20px;
+        }
+        main article {
+            box-sizing: border-box;
+            border: 1px none;
+            width: 40%;
+            height: 100%;
+            position: relative;
+            background-color: whitesmoke;
+        }
+
+        #perfil{
+            position: absolute;
+            width: 250px;
+            height: 260px;
+            margin-top: 0;
+            bottom: 90%;
+            left: 80%;
+        }
+        #startup-ktartica{
+            position: absolute;
+            width: 400px;
+            height: 250px;
+            margin-top: 20px;
+            bottom: 80%;
+            left: 51%;
+        }
+        
+        #apresentacao{
+            position: absolute;
+            text-align: justify;
+            margin-left: 20px;
+            margin-right: 20px;
+            top: 300px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+     
+        .rodape{        
+            display: flex;  
+            box-sizing: border-box;
+            border: 1px none;   
+            width: 100%;
+            height: 450px;  
+            color: whitesmoke;      
+        }
+        address{ 
+            text-align: justify;
+        }
+        footer ul{
+            list-style-type: none;
+            margin-top: 70px;
+        }
+        footer div{
+            box-sizing: border-box;
+            border: 1px none;
+            width: 100%;
+            text-align: center;    
+        }
+        
+    </style>
+    
+        <header class="cabecalho">
+        <div class="logo">          
+            <img id="imagem-logo" src="/imagens/logo.png" alt="">
+        </div>      
+        <nav class="navbar">
+            <ul>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/index.html">Pagina Inicial</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/index.html">Explorar</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/principais/aulas.html">Aulas</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="">Jogos</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="">Suporte</a></li>
+                <li><a style="color: whitesmoke; text-decoration: none;" href="/principais/sobre.html">Sobre Nós</a></li>
+                <li class="login"><a style="color: whitesmoke; text-decoration: none;" href="/principais/login.html">Login/Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br>
+    <body>
+        <h1 style="color: whitesmoke;">Sobre a Startup Ktártica e seu Criador</h1>
+        <main class="main-container">
+           
+            <article>
+                <div id="apresentacao">
+                    <article><br><img id="startup-ktartica" src="/imagens/logo.png" alt="não disponível"></article>
+
+                    <h1>Ktártica</h1>
+                    <p><b>Projeto de pesquisa da disciplina de Startup Model Intermediate da Faculdade Senac</b></p>
+                    <p> A startup Ktártica é um modelo de negócio B2C que consiste em uma plataforma virtual que visa apresentar melhores soluções para o ensino da arte nas escolas, já que os recursos disponíveis para trabalhar os conhecimentos dessa área no contexto escolar são insuficientes devido à falta de materiais de apoio que possibilitem um ensino de qualidade. </p>
+                    <br>
+                    <h3>Missão:</h3>
+                    <p>Oferecer uma educação em artística inovadora e eficaz por meio da tecnologia.</p>
+                    <h3>Visão:</h3>
+                    <p>Ser uma referência em plataformas digitais de ensino em todo o Brasil.</p>
+                    <h3>Visão:</h3>
+                    <p>- Humanismo</p>
+                    <p>- Inovação</p>
+                    <p>- Criatividade</p>
+                    <p>- Responsabilidade Social</p>
+                </div>
+            </article>
+            <article>
+                <div id="apresentacao">
+                    <article><img id="perfil" src="/imagens/raphael.jfif" alt="não disponível"></article>
+
+                    <h1>Raphael Henrique Coelho</h1>
+                    <p><b>Acadêmico do Primeiro Ano do Curso de Tecnologia em Análise e Desenvolvimento de Sistemas</b></p>
+                    <p><b>Faculdade: Senac</b></p>
+                    <p><b>Cidade: Ponta Grossa (PR)</b></p>
+                    <p><b>Telefone profissional: (42) 99810-2741</b></p>
+                    <p><b>e-mail profissional: coelho.raphaelhenrique@gmail.com</b></p>
+                    <p> Sou professor de Arte há seis anos no ensino público do Estado do Paraná. Compreendo as necessidades de um professor em sala de aula, pois vivo isso todos os dias. Como estudante de TI, espero poder contribuir para a educação desenvolvendo softwares que correspondam as expectativas dos professores e alunos. </p>
+                    <br>
+                    <p><b>Link para o meu Currículo Lattes:</b></p>
+                    <a href=" https://lattes.cnpq.br/9881113901059432"> https://lattes.cnpq.br/9881113901059432</a>
+                    <br>
+                    <p><b>Link para o meu Linkedin:</b></p>
+                    <a href="https://www.linkedin.com/in/raphael-coelho-95a689163/">https://www.linkedin.com/in/raphael-coelho-95a689163/</a>
+                </div>
+            </article>
+        </main>
+    
+    </body>
+    <br><br><br>
+   
+    <hr>
+    <footer class="rodape">
+        <div id="adress"> 
+            <ul>
+                <li><h3>Contato:</h3></li>
+                <br>
+                <li>(42) 99810-2741</li>
+                <br>
+                <li>coelho.raphaelhenrique@gmail.com</li>
+            </ul>
+            <ul>
+                <li><h3>Endereço:</h3></li>
+                <br>
+                <li>Faculdade de Tecnologia SENAC Ponta Grossa</li>
+                <br>
+                <li>Av. João Manoel dos Santos Ribas, 313 - Nova Rússia, Ponta Grossa - PR</li>
+                84051-410
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><h3>Quem Somos</h3></li>
+                <br>
+                <li>Sobre Nós</li>
+                <br>
+                <li>Nossos Planos</li>
+                <br>
+                <li>Trabalhe conosco</li>
+                <br>
+                <li>Investidores</li>
+                <br>
+                <li>Missão, Visão e Valores</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><h3>Termos de Uso</h3></li>
+                <br>
+                <li>Termos e Condições</li>
+                <br>
+                <li>Contrato de Licença</li>    
+                <br>
+                <li>Política de Segurança</li>
+                <br>
+                <li>Política de Privacidade</li>
+                <br>
+                <li>Proteção de Dados</li>
+            </ul>
+        </div>
+        <div> 
+            <ul>
+                <li><h3>Baixe Nosso App</h3></li>
+                <li><img style="width: 400px; height: 200px;" src="/imagens/Google.png" alt=""></li>
+                <li></li>
+            </ul>
+        </div>  
+    </footer> 
+    
+</body>
+</html>
